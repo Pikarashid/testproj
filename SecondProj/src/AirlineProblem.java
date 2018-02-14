@@ -1,6 +1,6 @@
 public class AirlineProblem {
 
-	public static void main(String args[]) {
+	public static AirlineProblem main(String args[]) {
 
 		Scanner scannerToReadAirlines = null;
 
@@ -8,7 +8,7 @@ public class AirlineProblem {
 			scannerToReadAirlines = new Scanner(new File("airlines.txt"));
 			}
 
-			catch(IOException e) {
+			catch(IOException e){
 				
 				System.out.println("Could not connect to file airlines.txt.");
 				System.exit(0);
