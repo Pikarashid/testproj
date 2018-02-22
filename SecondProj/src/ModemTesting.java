@@ -1,4 +1,4 @@
-interface Modem {
+class interface Modem {
  
   public boolean open();                               
   public boolean close();
@@ -102,7 +102,7 @@ public class ModemTesting {
 	Modem [] modems = new Modem[4];
 	modems[0] = new MindStickModem();
 	modems[1] = new HuaweiModem();
-	modems[2] = new MindStickModem();
+	modems[2] = new HuaweiModem();
 	modems[3] = new MindStickModem();
 	
 	for (Modem modem:modems) {

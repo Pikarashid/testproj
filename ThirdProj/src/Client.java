@@ -141,7 +141,7 @@ public class Client  {
 		// default values
 		int portNumber = 1500;
 		//String serverAddress = "localhost";
-		String serverAddress = "192.168.1.197";
+		String serverAddress = "192.168.1.158";
 		String userName = "Piqa";
 
 		// depending of the number of arguments provided we fall through
