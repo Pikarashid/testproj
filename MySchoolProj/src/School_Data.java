@@ -70,9 +70,9 @@ public class School_Data {
 				      //STEP 5: Extract data from result set
 				      if (tableName.equalsIgnoreCase("Student")) {
 				     
-				    	  System.out.println("_____________________________________________________________");
-					      System.out.println("|Name    | ID      | Age   | Gender  | Class  |");
-					      System.out.println("--------------------------------------------------------------");
+				    	  System.out.println("_____________________________________________________________________________________");
+					      System.out.println("|      Name     |        ID       |   Age    | Gender      |           Class           |");
+					      System.out.println("-------------------------------------------------------------------------------------");
 					      
 				      while(rs.next()){
 				         //Retrieve by column name
@@ -84,7 +84,7 @@ public class School_Data {
 
 				         //Display values
 				         
-				         System.out.println("|"+ name +"            |"+ id +"        |"+ age +"          |"+ gender +"   |"+ subject +"     |");
+				         System.out.println("|  "+ name +"    |    "+ id +"     |"+ age +"  |"+ gender +" |"+ subject +"            |");
 				         
 				      	}
 				      System.out.println("--------------------------------------------------------------");
@@ -103,9 +103,9 @@ public class School_Data {
 					      }
 					      System.out.println("-------------------------------");
 					   } else if (tableName.equalsIgnoreCase("Marks")) {
-						   System.out.println("_________________________");
-						   System.out.println("Name   | Grade	| Status	|");
-						   System.out.println("-----------------------");
+						   System.out.println("_________________________________________");
+						   System.out.println(     "Name     | Grade	|    Status	    |");
+						   System.out.println("-----------------------------------------");
 						   
 					      while(rs.next()){
 					         //Retrieve by column name
@@ -114,7 +114,7 @@ public class School_Data {
 						     String status = rs.getString("Status");
 					  
 					         //Display values;
-					         System.out.println(name +"              |" + grade +"               |" + status +"			|"	);
+					         System.out.println(     name +" |" + grade +"|" + status +"|"	);
 					      }  
 					      System.out.println("-----------------------");
 					   }

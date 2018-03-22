@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 //With Join Order sequence followed
 public class JoinExample {
    public static void main(String[] args) {
